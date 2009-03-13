@@ -21,3 +21,12 @@ Let us know, we're happy to help. Our email is webget@webget.com
 
 Do you want to create your own high security gems?
 Learn how at http://www.rubygems.org/read/chapter/21
+
+To see your current gem certificate list:
+
+  sudo gem cert --list
+
+Our cert looks like this:
+
+  /C=US/ST=California/L=San Francisco/O=WebGet.com/OU=WebGet.com/CN=WebGet.com/emailAddress=webget@webget.com
+
