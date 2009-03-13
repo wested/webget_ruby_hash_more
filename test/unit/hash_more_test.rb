@@ -1,7 +1,7 @@
 require 'test/unit'
 require 'hash_more'
 
-class HashMoreTest < Test::Unit::TestCase
+class Testing < Test::Unit::TestCase
 
  def test_new
   h = HashMore.new

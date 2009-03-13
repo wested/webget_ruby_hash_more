@@ -13,6 +13,6 @@ Gem::Specification.new do |s|
   s.require_path      = 'lib'
   s.has_rdoc          = true
   s.files             = ['lib/hash_more.rb']
-  s.test_files        = ['test/unit/hash_more.rb']
+  s.test_files        = ['test/unit/hash_more_test.rb']
 
 end
