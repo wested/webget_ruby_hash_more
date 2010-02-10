@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'hash_more'
+require 'webget_ruby_hash_more'
 
 class Testing < Test::Unit::TestCase
 

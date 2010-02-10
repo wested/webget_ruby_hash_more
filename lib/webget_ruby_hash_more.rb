@@ -1,3 +1,4 @@
+=begin rdoc
 
 = HashMore
 
@@ -29,3 +30,17 @@ Example of counting
   h['Acme']['John Doe']
   => how many users at Acme are named John Doe
 
+=end
+
+
+class HashMore < Hash
+
+  def initialize
+    super{|h,k| h[k] = HashMore.new }
+  end
+
+  def +(x)
+    x
+  end
+  
+end
