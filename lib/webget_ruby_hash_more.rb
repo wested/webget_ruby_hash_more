@@ -1,6 +1,6 @@
 =begin rdoc
 
-= HashMore
+= WebGet Ruby Gem: HashMore
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2007-2010 Joel Parker Henderson
