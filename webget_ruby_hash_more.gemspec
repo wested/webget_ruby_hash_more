@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.require_path      = 'lib'
   s.has_rdoc          = true
-  s.files             = ['lib/webget_ruby_hash_more.rb']
+  s.files             = ['README.rdoc','LICENSE.txt','lib/webget_ruby_hash_more.rb']
   s.test_files        = ['test/webget_ruby_hash_more_test.rb']
 
 end
