@@ -6,11 +6,15 @@ Copyright:: Copyright (c) 2007-2010 Joel Parker Henderson
 License:: CreativeCommons License, Non-commercial Share Alike
 License:: LGPL, GNU Lesser General Public License
 
-HashMore is a hash of hashes of hashes and so on recursively
+HashMore is a hash of hashes of hashes and so on recursively, enabling arbitrarily access (and assignment of values) to specific elements of a (multi-dimensional) hash, whether the element already exists or not.
 
-Example
+Ruby's built-in Hash class will raise an error if code attempts to access an element which doesn't exist; HashMore will create the necessary elements and then execute the access.
+
+Examples:
   h = HashMore.new
   h['foo']['bar']['baz'] = 'hello'  # create the keys; set value to 'hello'
+  =>
+  {:foo => {:bar => {:baz = 'hello'}}}
 
 = Counting
 
