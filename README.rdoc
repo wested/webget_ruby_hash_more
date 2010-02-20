@@ -21,15 +21,19 @@ Examples:
 Example
   h = HashMore.new
   h['foo']['bar']['baz'] += 5   # create the keys; set value to 5
+  =>
+  {:foo => {:bar => {:baz = 5}}}
 
 Example of counting
   for u in users 
     h[u.company][u.name]+=1
   end
 
+Show the names of all the users at Acme
   h['Acme'].keys
-  => names of all the users at Acme
 
+How many users at Acme are named John Doe?
   h['Acme']['John Doe']
-  => how many users at Acme are named John Doe
+  =>
+  {:Acme => {:JohnDoe = 42}}
 
