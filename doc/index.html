@@ -1,74 +1,129 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+<title>Documentation by YARD 0.5.3</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
-	<title>webget_ruby_hash_more</title>
+<link rel="stylesheet" href="css/pygments.css" type="text/css" media="screen" charset="utf-8" />
 
-	<link type="text/css" media="screen" href="rdoc.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html" title="Index">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
 
-	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
 
-</head>
-<body class="indexpage">
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><div id='filecontents'><h1>WebGet Ruby Gem: HashMore</h1>
+<table>
+<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
 
-	
-	<h1>webget_ruby_hash_more</h1>
+</td></tr>
+<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2007-2010 Joel Parker Henderson
 
-	
-	<p>This is the API documentation for 'webget_ruby_hash_more'.</p>
-	
+</td></tr>
+<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
 
-	
-	
-	<h2>Files</h2>
-	<ul>
-		
-			<li class="file"><a href="INSTALL_txt.html">INSTALL.txt</a></li>
-		
-			<li class="file"><a href="README_rdoc.html">README.rdoc</a></li>
-		
-			<li class="file"><a href="webget_ruby_hash_more_gemspec.html">webget_ruby_hash_more.gemspec</a></li>
-		
-			<li class="file"><a href="webget_ruby_hash_more_sha512_txt.html">webget_ruby_hash_more.sha512.txt</a></li>
-		
-	</ul>
-	
+</td></tr>
+<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
 
-	<h2>Classes/Modules</h2>
-	<ul>
-		
-		<li class="class"><a href="HashMore.html">HashMore</a></li>
-		
-		<li class="class"><a href="Testing.html">Testing</a></li>
-		
-	</ul>
+</td></tr>
+</table>
+<p>
+HashMore is a hash of hashes of hashes and so on recursively, enabling
+arbitrarily access (and assignment of values) to specific elements of a
+(multi-dimensional) hash, whether the element already exists or not.
+</p>
+<p>
+Ruby&#8217;s built-in Hash class will raise an error if code attempts to
+access an element which doesn&#8217;t exist; HashMore will create the
+necessary elements and then execute the access.
+</p>
+<p>
+Additionally, using the += operator to assign a numeric value to an element
+</p>
+<p>
+Examples:
+</p>
+<pre class="code">
+  hash = HashMore.new
+  hash[&quot;red&quot;][&quot;apple&quot;] = true
+  hash[&quot;red&quot;][&quot;dress&quot;] = true
+  hash[&quot;red&quot;][&quot;truck&quot;] = true
 
-	<h2>Methods</h2>
-	<ul>
-		
-			<li><a href="HashMore.html#M000000">::new &mdash; HashMore</a></li>
-		
-			<li><a href="HashMore.html#M000001">#+ &mdash; HashMore</a></li>
-		
-			<li><a href="Testing.html#M000004">#test_add &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000003">#test_equal &mdash; Testing</a></li>
-		
-			<li><a href="Testing.html#M000002">#test_new &mdash; Testing</a></li>
-		
-	</ul>
+  hash[&quot;red&quot;] =&gt; {&quot;apple&quot;=&gt;true, &quot;dress&quot;=&gt;true, &quot;truck&quot;=&gt;true}
+</pre>
+<h1>Counting and Totals</h1>
+<p>
+This class is also useful for building aggregate data about a set of
+similar objects, such as how many employees are in each department of each
+division of a company or total tax and sale amounts for a set of invoices
+by customer by year.
+</p>
+<p>
+Counting example:
+</p>
+<pre class="code">
+  h = HashMore.new
+  employees = Employee.all
+  for e in employees
+    h[e.division][e.department]+=1
+  end
 
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
-</body>
+  h['sales']['east coast] =&gt; 28
+  h['sales']['west coast] =&gt; 23
+</pre>
+<p>
+Totals example:
+</p>
+<pre class="code">
+  h = HashMore.new
+  invoices = Invoices.all
+
+  for i in invoices
+    h[i.customer.name][i.sale_date.year]['tax'] += i.tax_amount
+    h[i.customer.name][i.sale_date.year]['sale'] += i.sale_amount
+  end
+
+  h['Acme Corp']['2008']['tax'] =&gt; 12039.12
+  h['Acme Corp']['2009']['sale'] =&gt; 102649
+</pre>
+</div></div>
+    
+    <div id="footer">
+  Generated on Tue Mar 23 12:02:56 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
+  0.5.3 (ruby-1.9.1).
+</div>
+
+  </body>
 </html>

@@ -49,14 +49,55 @@ Totals example:
 
 =end
 
-
+  # WebGet Ruby Gem: HashMore
+  # 
+  # HashMore is a hash of hashes of hashes and so on recursively, enabling arbitrarily access (and assignment of values) to specific elements of a (multi-dimensional) hash, whether the element already exists or not.
+  # 
 class HashMore < Hash
+
+  # @example
+  # Basic use:
+  #   hash = HashMore.new
+  #   hash["red"]["apple"] = true
+  #   hash["red"]["dress"] = true
+  #   hash["red"]["truck"] = true
+  #   =>
+  #   hash["red"] => {"apple"=>true, "dress"=>true, "truck"=>true}
+  # 
+  # Counting example:
+  #   
+  #   h = HashMore.new
+  #   employees = Employee.all
+  #   for e in employees 
+  #     h[e.division][e.department]+=1
+  #   end
+  # 
+  #   h['sales']['east coast] => 28
+  #   h['sales']['west coast] => 23
+  # 
+  # Totals example:
+  # 
+  #   h = HashMore.new
+  #   invoices = Invoices.all
+  # 
+  #   for i in invoices
+  #     h[i.customer.name][i.sale_date.year]['tax'] += i.tax_amount
+  #     h[i.customer.name][i.sale_date.year]['sale'] += i.sale_amount
+  #   end
+  # 
+  #   h['Acme Corp']['2008']['tax'] => 12039.12
+  #   h['Acme Corp']['2009']['sale'] => 102649
 
   def initialize
     super{|h,k| h[k] = HashMore.new }
   end
 
-  def +(x)
+  # Adds passed value to hash element or creates element if not already present
+  # @return [Object] new value of element
+  # @param [Object] increment value to add
+  # @example
+  #   h[i.customer.name][i.sale_date.year]['tax'] += i.tax_amount
+  def +(increment)
     x
   end
   

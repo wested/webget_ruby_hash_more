@@ -1,277 +1,344 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8" />
+<title>Class: HashMore</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
-	<title>Class: HashMore</title>
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
-	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/pygments.css" type="text/css" media="screen" charset="utf-8" />
 
-	<script src="./js/jquery.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/thickbox-compressed.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/quicksearch.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/darkfish.js" type="text/javascript"
-		charset="utf-8"></script>
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (H)</a> &raquo; 
+    
+    
+    <span class="title">HashMore</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
 
-</head>
-<body class="class">
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
 
-	<div id="metadata">
-		<div id="file-metadata">
-			<div id="file-list-section" class="section">
-				<h3 class="section-header">In Files</h3>
-				<div class="section-body">
-					<ul>
-					
-						<li><a href="./lib/webget_ruby_hash_more_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/webget_ruby_hash_more.rb">lib/webget_ruby_hash_more.rb</a></li>
-					
-					</ul>
-				</div>
-			</div>
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: HashMore 
+  
+  
+</h1>
 
-			
-		</div>
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Hash</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Hash</li>
+          
+            <li class="next">HashMore</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/webget_ruby_hash_more.rb</dd>
+  
+</dl>
+<div class="clear"></div>
 
-		<div id="class-metadata">
-
-			<!-- Parent Class -->
-			
-			<div id="parent-class-section" class="section">
-				<h3 class="section-header">Parent</h3>
-				
-				<p class="link">Hash</p>
-				
-			</div>
-			
-
-			<!-- Namespace Contents -->
-			
-
-			<!-- Method Quickref -->
-			
-			<div id="method-list-section" class="section">
-				<h3 class="section-header">Methods</h3>
-				<ul class="link-list">
-					
-					<li><a href="#M000000">::new</a></li>
-					
-					<li><a href="#M000001">#+</a></li>
-					
-				</ul>
-			</div>
-			
-
-			<!-- Included Modules -->
-			
-		</div>
-
-		<div id="project-metadata">
-			
-			
-			<div id="fileindex-section" class="section project-section">
-				<h3 class="section-header">Files</h3>
-				<ul>
-				
-					<li class="file"><a href="./INSTALL_txt.html">INSTALL.txt</a></li>
-				
-					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
-				
-					<li class="file"><a href="./webget_ruby_hash_more_gemspec.html">webget_ruby_hash_more.gemspec</a></li>
-				
-					<li class="file"><a href="./webget_ruby_hash_more_sha512_txt.html">webget_ruby_hash_more.sha512.txt</a></li>
-				
-				</ul>
-			</div>
-			
-
-			<div id="classindex-section" class="section project-section">
-				<h3 class="section-header">Class Index
-					<span class="search-toggle"><img src="./images/find.png"
-						height="16" width="16" alt="[+]"
-						title="show/hide quicksearch" /></span></h3>
-				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-				<fieldset>
-					<legend>Quicksearch</legend>
-					<input type="text" name="quicksearch" value=""
-						class="quicksearch-field" />
-				</fieldset>
-				</form>
-
-				<ul class="link-list">
-				
-					<li><a href="./HashMore.html">HashMore</a></li>
-				
-					<li><a href="./Testing.html">Testing</a></li>
-				
-				</ul>
-				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
-			</div>
-
-			
-		</div>
-	</div>
-
-	<div id="documentation">
-		<h1 class="class">HashMore</h1>
-
-		<div id="description">
-			<h1>WebGet Ruby Gem: <a href="HashMore.html">HashMore</a></h1>
-<table>
-<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
-
-</td></tr>
-<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2007-2010 Joel Parker Henderson
-
-</td></tr>
-<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
-
-</td></tr>
-<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
-
-</td></tr>
-</table>
-<p>
-<a href="HashMore.html">HashMore</a> is a hash of hashes of hashes and so
-on recursively
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>
+WebGet Ruby Gem: HashMore
 </p>
 <p>
-Example
+HashMore is a hash of hashes of hashes and so on recursively, enabling
+arbitrarily access (and assignment of values) to specific elements of a
+(multi-dimensional) hash, whether the element already exists or not.
 </p>
-<pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div>
+
+  
+
+  <h2>Instance Method Summary</h2>
+
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#%2B-instance_method" title="#+ (instance method)">- (Object) <strong>+</strong>(increment) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+Adds passed value to hash element or creates element if not already
+present.
+
+</span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (HashMore) <strong>initialize</strong> </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc">
+A new instance of HashMore.
+
+</span>
+  
+</li>
+
+    
+  </ul>
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><a href="" title="HashMore (class)">HashMore</a></tt>) <strong>initialize</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+A new instance of HashMore
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">Basic use:
+  hash = HashMore.new
+  hash[&quot;red&quot;][&quot;apple&quot;] = true
+  hash[&quot;red&quot;][&quot;dress&quot;] = true
+  hash[&quot;red&quot;][&quot;truck&quot;] = true
+  =&gt;
+  hash[&quot;red&quot;] =&gt; {&quot;apple&quot;=&gt;true, &quot;dress&quot;=&gt;true, &quot;truck&quot;=&gt;true}
+
+Counting example:
+
   h = HashMore.new
-  h['foo']['bar']['baz'] = 'hello'  # create the keys; set value to 'hello'
-</pre>
-<h1>Counting</h1>
-<p>
-Example
-</p>
-<pre>
-  h = HashMore.new
-  h['foo']['bar']['baz'] += 5   # create the keys; set value to 5
-</pre>
-<p>
-Example of counting
-</p>
-<pre>
-  for u in users
-    h[u.company][u.name]+=1
+  employees = Employee.all
+  for e in employees 
+    h[e.division][e.department]+=1
   end
 
-  h['Acme'].keys
-  =&gt; names of all the users at Acme
+  h['sales']['east coast] =&gt; 28
+  h['sales']['west coast] =&gt; 23
 
-  h['Acme']['John Doe']
-  =&gt; how many users at Acme are named John Doe
-</pre>
+Totals example:
 
-		</div>
+  h = HashMore.new
+  invoices = Invoices.all
 
-		<!-- Constants -->
-		
+  for i in invoices
+    h[i.customer.name][i.sale_date.year]['tax'] += i.tax_amount
+    h[i.customer.name][i.sale_date.year]['sale'] += i.sale_amount
+  end
 
-		<!-- Attributes -->
-		
+  h['Acme Corp']['2008']['tax'] =&gt; 12039.12
+  h['Acme Corp']['2009']['sale'] =&gt; 102649</pre>
+    
+  </div>
 
-		<!-- Methods -->
-		
-		<div id="public-class-method-details" class="method-section section">
-			<h3 class="section-header">Public Class Methods</h3>
-
-		
-			<div id="new-method" class="method-detail ">
-				<a name="M000000"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">new</span><span
-						class="method-args">()</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="new-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/webget_ruby_hash_more.rb, line 38</span>
-38:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>
-39:     <span class="ruby-keyword kw">super</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">h</span>,<span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-constant">HashMore</span>.<span class="ruby-identifier">new</span> }
-40:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-		</div>
-	
-		<div id="public-instance-method-details" class="method-section section">
-			<h3 class="section-header">Public Instance Methods</h3>
-
-		
-			<div id="--method" class="method-detail ">
-				<a name="M000001"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">+</span><span
-						class="method-args">(x)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p class="missing-docs">(Not documented)</p>
-					
-
-					
-					<div class="method-source-code"
-						id="--source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/webget_ruby_hash_more.rb, line 42</span>
-42:   <span class="ruby-keyword kw">def</span> <span class="ruby-operator">+</span>(<span class="ruby-identifier">x</span>)
-43:     <span class="ruby-identifier">x</span>
-44:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-		</div>
-	
-
-	</div>
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
 
-	<div id="rdoc-debugging-section-dump" class="debugging-section">
-	
-		<p>Disabled; run with --debug to generate this.</p>
-	
-	</div>
+91
+92
+93</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_hash_more.rb', line 91</span>
 
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
+<span class='kw'>def</span> <span class='id initialize'>initialize</span>
+  <span class='kw'>super</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id h'>h</span><span class='comma'>,</span><span class='id k'>k</span><span class='op'>|</span> <span class='id h'>h</span><span class='lbracket'>[</span><span class='id k'>k</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'>HashMore</span><span class='period'>.</span><span class='id new'>new</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
 
-</body>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="+-instance_method">
+  
+    - (<tt>Object</tt>) <strong>+</strong>(increment) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Adds passed value to hash element or creates element if not already present
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4></h4>
+      <pre class="example code">  <span class='id h'>h</span><span class='lbracket'>[</span><span class='id i'>i</span><span class='period'>.</span><span class='id customer'>customer</span><span class='period'>.</span><span class='id name'>name</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id i'>i</span><span class='period'>.</span><span class='id sale_date'>sale_date</span><span class='period'>.</span><span class='id year'>year</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>tax</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='id i'>i</span><span class='period'>.</span><span class='id tax_amount'>tax_amount</span></pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <span class='name'>increment</span>
+      
+      
+      
+        &mdash;
+        
+value to add
+
+
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+      
+        &mdash;
+        
+new value of element
+
+
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+100
+101
+102</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/webget_ruby_hash_more.rb', line 100</span>
+
+<span class='kw'>def</span> <span class='op'>+</span><span class='lparen'>(</span><span class='id increment'>increment</span><span class='rparen'>)</span>
+  <span class='id x'>x</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Tue Mar 23 12:02:56 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool">yard</a>
+  0.5.3 (ruby-1.9.1).
+</div>
+
+  </body>
 </html>
-
